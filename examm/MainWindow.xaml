@@ -1,0 +1,23 @@
+﻿<Window x:Class="examm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:examm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="-2,0,2,0">
+        <TextBlock Name="TextBlocks" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5"/>
+        <TextBox MaxLength="250" TextChanged="TextBox_TextChanged" Margin="0,0,44,10">Welcome!   Choose dates you need</TextBox>
+        <DatePicker  HorizontalAlignment="Left" Margin="85,72,0,0" VerticalAlignment="Top" x:Name="Calend1"/>
+        <DatePicker  HorizontalAlignment="Left" Margin="254,72,0,0" VerticalAlignment="Top"  x:Name="Calend2"/>
+        <Button x:Name="button" Content="Generate Report" HorizontalAlignment="Left" Margin="85,163,0,0" VerticalAlignment="Top" Width="102" Height="45" Click="button_Click"/>
+        <!--<Button x:Name="button1" Content="Send Email" HorizontalAlignment="Left" Margin="254,163,0,0" VerticalAlignment="Top" Width="102" Height="45" Click="button1_Click" />-->
+        <Button Content="Send EMail" Click="ButtonClicked" Height="45" HorizontalAlignment="Left" Margin="254,163,0,0" Name="button1" VerticalAlignment="Top" Width="108" />
+
+
+    </Grid>
+
+</Window>
+
+ 
